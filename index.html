@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        body {
+            background-color: rgb(66, 33, 97);
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid #fff; */
+        }
+
+        .container h1 {
+            font-size: 100px;
+            color: #fff;
+            text-shadow: 7px 5px 2px rgba(0, 0, 0, 0.7), 7px 5px 2px rgba(0, 0, 0, 0.7);
+            font-family: fantasy;
+        }
+        .container h3{
+            color: #fff;
+        }
+        .btn{
+            display: flex;            
+        }
+        button{
+            padding: 13px 45px;
+            background-color: rgb(184, 5, 5);
+            border: transparent;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;  
+            cursor: pointer;  
+            margin: 5px;        
+        }
+        button:hover{
+            transition: 0.5s ease-in;
+            background-color: rgb(255, 0, 0);
+        }
+        #str{
+            background-color: green;
+        }
+        #str:hover{
+           background-color: rgb(0, 255, 0);
+        }
+       
+    </style>
+</head>
+
+<body>   
+    <div class="container">
+        <h3>Press Start Button for run Time</h3>
+        <h3>Press Stop Button for Stopping the Time</h3>
+        <h1 id="showClock"></h1>
+        <div class="btn">
+            <button onclick="start()" id="str">Start</button>
+            <button onclick="stop()">Stop</button>
+        </div>
+    </div>
+   
+</body>
+<script src="Clock.js"></script>
+
+</html>
